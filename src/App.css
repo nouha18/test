@@ -1,7 +1,15 @@
 .App {
   text-align: center;
 }
-
+.game-container{
+color:#282c34;
+width:53vh;
+padding-left :0px;
+height:auto;
+margin-left :260px;
+margin-top :80px;
+border : 2px solid #bbb;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -15,7 +23,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,10 +31,42 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.board {
+  width: 405px;
+  height: 405px;
+  position: relative;
+  background: #ddd;
+}
+.overlay {
+  width: 405px;
+  height: 405px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #0004;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tile {
+  width: 95px;
+  height: 95px;
+  position: absolute;
+  background: white;
+  transition: all 0.1s ease-in-out;
+  border-radius: 2px;
+  background-image: url('https://images3.alphacoders.com/674/thumb-1920-674180.jpg');
+  background-size: 400px 400px;
+}
 .App-link {
   color: #61dafb;
 }
+.game-header{
+ color: aquamarine;
+ border :1px solid #282c34;
+}
+
 
 @keyframes App-logo-spin {
   from {
